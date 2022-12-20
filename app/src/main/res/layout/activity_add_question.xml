@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/addValueTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="72dp"
+        android:text="Valoare"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/addAnswerTextView" />
+
+    <TextView
+        android:id="@+id/addQuestionTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="48dp"
+        android:text="Intrebare"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/addQuestionInput"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="36dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:minHeight="48dp"
+        app:layout_constraintStart_toEndOf="@+id/addQuestionTextView"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/addAnswerTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="72dp"
+        android:text="Raspuns"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/addQuestionTextView" />
+
+    <EditText
+        android:id="@+id/addAnswerInput"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="52dp"
+        android:layout_marginTop="45dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:minHeight="48dp"
+        app:layout_constraintStart_toEndOf="@+id/addAnswerTextView"
+        app:layout_constraintTop_toBottomOf="@+id/addQuestionInput" />
+
+    <EditText
+        android:id="@+id/addValueInput"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="52dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:minHeight="48dp"
+        app:layout_constraintStart_toEndOf="@+id/addValueTextView"
+        app:layout_constraintTop_toBottomOf="@+id/addAnswerInput" />
+
+    <EditText
+        android:id="@+id/addCategoryInput"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="44dp"
+        android:layout_marginTop="44dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:minHeight="48dp"
+        app:layout_constraintStart_toEndOf="@+id/addcategoryTextView"
+        app:layout_constraintTop_toBottomOf="@+id/addValueInput" />
+
+    <TextView
+        android:id="@+id/addcategoryTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="72dp"
+        android:text="Categorie"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/addValueTextView" />
+
+    <TextView
+        android:id="@+id/questionErrorText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#F44336"
+        app:layout_constraintTop_toBottomOf="@+id/addQuestionInput"
+        tools:layout_editor_absoluteX="148dp" />
+
+    <TextView
+        android:id="@+id/answerErrorText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#F44336"
+        app:layout_constraintTop_toBottomOf="@+id/addAnswerInput"
+        tools:layout_editor_absoluteX="148dp" />
+
+    <TextView
+        android:id="@+id/valueErrorText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:textColor="#F44336"
+        app:layout_constraintTop_toBottomOf="@+id/addValueInput"
+        tools:layout_editor_absoluteX="154dp" />
+
+    <TextView
+        android:id="@+id/categoryErrorText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:textColor="#F44336"
+        app:layout_constraintTop_toBottomOf="@+id/addCategoryInput"
+        tools:layout_editor_absoluteX="154dp" />
+</androidx.constraintlayout.widget.ConstraintLayout>
